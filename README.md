@@ -1,3 +1,4 @@
 ### python
 
-[人工智能python基础](https://github.com/zyxhzsh/artificial-intelligence/blob/master/人工智能python基础/readme.md)
+[人工智能python基础](https://github.com/GrowTowardsSunlight/language/tree/main/python/人工智能python基础/markdown)
+
