@@ -1,0 +1,20 @@
+1.读取文件'笑傲江湖.txt'，统计文本中所有字符的出现频次，将结果按如下格式保存到文件'笑傲江湖_字符统计.txt'。
+
+2.通过input输入数字的时候
+1.答：
+
+```python
+def count_word(s):
+    d = {}
+    for i in s:
+        d[i] = d.get(i, 0) + 1
+    return d
+
+with open('/Users/orange/workplace/笑傲江湖.txt', 'r', encoding = 'utf-8') as f:
+    s = f.read()
+    dic = count_word(s)
+
+with open('/Users/orange/workplace/笑傲江湖_字符统计', 'w', encoding = 'utf-8') as f:
+    for k, v in dic.items():
+        f.writelines('{}, {}\n'.format(k, v))
+```
